@@ -1,15 +1,16 @@
 <?php
+
 /*
  * Plugin Name: WooCommerce PayGate PayHost
- * Plugin URI: https://www.refresh.co.za/
- * Description: Make payments on your site using PayGate's PayHost
- * Author: Refresh Creative Media
- * Author URI: https://www.refresh.co.za/
+ * Plugin URI: https://github.com/centricomen/woocommerce-paygate-payhost
+ * Description: Make payments on your site using PayGate's PayHost service.
+ * Author: Thokozani Mhlongo
+ * Author URI: http://www.codexperience.co.za
  * Version: 1.0
  * Text Domain: woocommerce-paygate-payhost
  * Domain Path: /languages
  *
- * Copyright (c) 2016 Refresh Creative Media
+ * Copyright (c) 2016
  */
 
 	if ( ! defined ( 'ABSPATH' ) )
