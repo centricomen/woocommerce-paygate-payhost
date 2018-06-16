@@ -1,6 +1,5 @@
 <?php
 
-	include 'includes/CleanInput.php';
 
 	class WooCommercePayGatePayHost extends WC_Payment_Gateway_CC {
 		
@@ -353,12 +352,6 @@
 			
 			# include stylesheets for the form
 			wp_enqueue_style( $this -> id . '-style', WC_PAYGATE_PLUGIN_URL . '/assets/css/paygate-payhost-form.css' );
-			
-			# make sure this script exists
-			wp_enqueue_script( 'woocommerce-payment', WC()->plugin_url()  . '/assets/js/jquery-payment/jquery.payment.js' );
-			
-			wp_enqueue_script( $this -> id, WC_PAYGATE_PLUGIN_URL . '/assets/js/card.js', array ( ), '1.0', true );
-			wp_enqueue_script( $this -> id . '-checkout', WC_PAYGATE_PLUGIN_URL . '/assets/js/card-checkout.js', array ( ), '1.0', true );
 			
 		}
 
