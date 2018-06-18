@@ -20,18 +20,9 @@
 			$this -> has_fields           	= true;
 			
 			$this -> supports             	= array (
-				'subscriptions',
 				'products',
 				'refunds',
 				'default_credit_card_form',
-				'subscription_cancellation',
-				'subscription_reactivation',
-				'subscription_suspension',
-				'subscription_amount_changes',
-				'subscription_payment_method_change_customer',
-				'subscription_payment_method_change_admin',
-				'subscription_date_changes',
-				'multiple_subscriptions',
 				'pre-orders',
 				'tokenization'
 			);
@@ -366,7 +357,7 @@
 		
 		private function getSoapPayload ( $order ) {
 
-            $currency	= 'ZAR';
+            $currency	= $order -> get_currency();
             $amount		= number_format( $order -> order_total, 2, '', '' ); #$order -> order_total * 100;
             $returnUrl	= home_url( '/' ) . '/wc-api/' . get_class( $this ) . '?order=' . $order -> order_key;
 
